@@ -3,15 +3,18 @@ import { Layout } from "antd";
 import AppHeader from "./components/Layout/AppHeader";
 import AppSider from "./components/Layout/AppSider";
 import AppContent from "./components/Layout/AppContent";
+import { CryptoContextProvider } from "./crypto/crypro-context";
 
 export default function App() {
   return (
-    <Layout>
-      <AppHeader />
+    <CryptoContextProvider>
       <Layout>
-        <AppSider />
-        <AppContent />s
+        <AppHeader />
+        <Layout>
+          <AppSider />
+          <AppContent />s
+        </Layout>
       </Layout>
-    </Layout>
+    </CryptoContextProvider>
   );
 }

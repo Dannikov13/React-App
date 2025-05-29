@@ -6,6 +6,7 @@ export const cryptoAssets = [
     data: new Date(),
   },
   { id: "ethereum", amount: 5, price: 2400, data: new Date() },
+  { id: "dogecoin", price: 0.3, amount: 10000 },
 ];
 
 export const cryptoData = {
